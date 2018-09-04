@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './Home.css';
+import NavTab from "../../components/NavTab/NavTab"
+import Wrapper from "../../components/Wrapper/Wrapper"
 
 class Home extends Component {
   login() {
@@ -7,13 +10,15 @@ class Home extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
     return (
-      <div className="container">
+      <div >
         {
           isAuthenticated() && (
-              <h2>
+            <Wrapper>
+              <h6>
                 Welcome Hank!
-              </h2>
-            )
+              </h6>
+            </Wrapper>
+                          )
         }
         {
           !isAuthenticated() && (

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './pages/Home/Home';
 import Callback from './utils/Callback/Callback';
 import Auth from './utils/Auth/Auth';
 import history from './utils/history';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import Chat from './Chat'
 
 const auth = new Auth();
@@ -20,9 +22,11 @@ export const makeMainRoutes = () => {
       <Router history={history}>
         <div>
           <Route path="/" render={(props) => <App auth={auth} {...props} />} />
-          <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
 
-          <Route exact path="/chat" component={Chat}/>
+          {/* <Route path="/home" render={(props) => <Home auth={auth} {...props} />} /> */}
+          <Route exact path="/chat" component={Chat} />
 
           <Route path="/callback" render={(props) => {
             handleAuthentication(props);
