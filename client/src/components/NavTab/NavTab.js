@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../../../public/gym-near.png";
+import image from "../../../src/gym-near.png";
 
 const NavTabs = () => (
   <div className="navBar">
