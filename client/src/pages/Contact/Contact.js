@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import Wrapper from "../../components/Wrapper/Wrapper"
+// import Wrapper from "../../components/Wrapper/Wrapper"
 
 const Contact = props => (
   <div>

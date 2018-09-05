@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const cors = require('cors')
 const Chatkit = require('pusher-chatkit-server')
 
@@ -50,13 +51,18 @@ app.post('/authenticate', (req, res) => {
   const authData = chatkit.authenticate({ userId: req.query.user_id })
   res.status(authData.status).send(authData.body)
 })
-
-
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+);
+// Add routes, both API and view
+app.use(routes);
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);

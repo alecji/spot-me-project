@@ -15,7 +15,7 @@ class Home extends Component {
           isAuthenticated() && (
             <Wrapper>
               <h6>
-                Welcome Hank!
+                Welcome John!
               </h6>
             </Wrapper>
                           )
