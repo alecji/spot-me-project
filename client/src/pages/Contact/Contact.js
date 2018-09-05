@@ -16,7 +16,7 @@ class Form extends Component {
     let value = event.target.value;
     const name = event.target.name;
 
-    if (name === "password") {
+    if (name === "issue") {
       value = value.substring(0, 15);
     }
     // Updating the input's state
@@ -30,9 +30,9 @@ class Form extends Component {
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName) {
       alert("Fill out your first and last name please!");
-    } else if (this.state.password.length < 6) {
+    } else if (this.state.issue.length < 6) {
       alert(
-        `Choose a more secure password ${this.state.firstName} ${this.state
+        `Choose a more secure issue ${this.state.firstName} ${this.state
           .lastName}`
       );
     } else {
@@ -42,7 +42,7 @@ class Form extends Component {
     this.setState({
       firstName: "",
       lastName: "",
-      password: ""
+      issue: ""
     });
   };
 
@@ -69,11 +69,11 @@ class Form extends Component {
             placeholder="Last Name"
           />
           <input
-            value={this.state.password}
-            name="password"
+            value={this.state.issue}
+            name="issue"
             onChange={this.handleInputChange}
-            type="password"
-            placeholder="Password"
+            type="issue"
+            placeholder="issue"
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
