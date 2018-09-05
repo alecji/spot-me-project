@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Button, Jumbotron,Carousel } from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import './App.css';
-import image from '../public/gym-near.png';
-// import Jumbotron from './components/Jumbotron/Jumbotron';
-import Chat from './Chat';
-import Login from './components/Login/Login';
 import NavTab from './components/NavTab/NavTab';
-import Wrapper from './components/Wrapper/Wrapper';
 
 class App extends Component {
   goTo(route) {
@@ -67,7 +62,7 @@ class App extends Component {
                 Log Out
             </Button>
               <h6 id="user">
-                Welcome Hank!
+                Welcome John!
               </h6>
             </div>
           )

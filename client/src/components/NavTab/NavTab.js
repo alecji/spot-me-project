@@ -29,7 +29,7 @@ const NavTabs = () => (
       <Link
         to="/about"
         className={
-          window.location.pathname === "/blog" ? "nav-link active" : "nav-link"
+          window.location.pathname === "/about" ? "nav-link active" : "nav-link"
         }
       >
         About Us
@@ -45,12 +45,21 @@ const NavTabs = () => (
         Contact
       </Link>
     </li>
-
+    <li className="nav-item">
+      <Link
+        to="/blog"
+        className={
+          window.location.pathname === "/blog" ? "nav-link active" : "nav-link"
+        }
+      >
+        My Blog
+      </Link>
+    </li>
     <li className="nav-item">
       <Link
         to="/chat"
         className={
-          window.location.pathname === "/contact/learn" ? "nav-link active" : "nav-link"
+          window.location.pathname === "/chat" ? "nav-link active" : "nav-link"
         }
       >
         Live Chat!
