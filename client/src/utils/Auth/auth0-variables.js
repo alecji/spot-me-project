@@ -1,5 +1,5 @@
 export const AUTH_CONFIG = {
-  domain: 'j-car.auth0.com',
-  clientId: '4NnFy3tPgXEc5RmYL26mFMH408UpRiT6',
+  domain: 'still-band-0192.auth0.com',
+  clientId: 'H4LHCYF__m5HHoikYGAUQTFUJb-E32cR',
   callbackUrl: 'http://localhost:3000/callback'
 }
