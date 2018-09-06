@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Chat from './Chat'
 import Blog from './pages/Blog/Blog';
+import Home from './pages/Home/Home';
 
 
 const auth = new Auth();
@@ -29,8 +30,6 @@ export const makeMainRoutes = () => {
           {/* <Route path="/home" render={(props) => <Home auth={auth} {...props} />} /> */}
           <Route exact path="/chat" component={Chat} />
           <Route path="/blog" component={Blog} />
-
-
           <Route path="/callback" render={(props) => {
             handleAuthentication(props);
             return <Callback {...props} /> 

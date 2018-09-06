@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="gym-near.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-   
-    <!--
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="gym-near.png">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -16,11 +20,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Spot Me</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
+  <title>Spot Me</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -30,5 +35,39 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-  </body>
+
+  <article class="athelas">
+    <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(https://bgwall.net/wp-content/uploads/2014/09/gym-room-vintage-wallpaper-high-definition.jpg) no-repeat center;">
+      <div class="dtc v-mid">
+        <header class="white-70">
+        </header>
+        <h1 class="f1 f-headline-l fw1 i white "> <span class="title">Spot Me</span></h1>
+      </div>
+    </div>
+    <div class="center f5 pv5 lh-copy ph2 about-wide">
+      <h1 class="f1 lh-title">Our Mission</h1>
+      <p class="about-text">
+        Our goal is to make a community for people who are focused on improving themselves physically. Whether you are a veteran
+        body builder or a complete novice, Spot Me is here to connect you to others who share your vision. If you need some
+        advice go to the live chat room and ask somebody, if you want to record your fitness progress write an entry in your
+        fitness journal! Keep in touch with others in your area and chat it up, who knows you may see them at your gym! And
+        if you ever need a workout partner just tell them Spot Me!
+      </p>
+
+    </div>
+    <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70 center f5 pv5 lh-copy ph2 about-wide">
+        <h1 class="f1 lh-title">Contact Us!</h1>
+      <a href="mailto:" class="link b f3 f2-ns dim black-70 lh-solid">support@spotme.com</a>
+      <div class="mt5">
+        <a href="/language/" title="Language" class="f6 dib pr2 mid-gray dim">Language</a>
+        <a href="/terms/"    title="Terms" class="f6 dib ph2 mid-gray dim">Terms of Use</a>
+        <a href="/privacy/"  title="Privacy" class="f6 dib pl2 mid-gray dim">Privacy</a>
+      </div>
+    </footer>
+  </article>
+
+
+
+</body>
+
 </html>

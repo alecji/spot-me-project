@@ -25,7 +25,7 @@ const NavTabs = () => (
        Home
       </Link>
     </li>
-    <li className="nav-item">
+    {/* <li className="nav-item">
       <Link
         to="/about"
         className={
@@ -34,8 +34,8 @@ const NavTabs = () => (
       >
         About Us
       </Link>
-    </li>
-    <li className="nav-item">
+    </li> */}
+    {/* <li className="nav-item">
       <Link
         to="/contact"
         className={
@@ -44,7 +44,7 @@ const NavTabs = () => (
       >
         Contact
       </Link>
-    </li>
+    </li> */}
     <li className="nav-item">
       <Link
         to="/blog"
